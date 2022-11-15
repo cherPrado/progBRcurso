@@ -1,0 +1,58 @@
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+    background: url("../imgs/a.png") center/cover no-repeat fixed;
+}
+p{
+    color: white;
+    font-size: larger;
+    background-color: rgba(50, 200, 0, 0.15);
+}
+h1{
+    color: aqua;
+    text-shadow: 2px 5px 10px white;
+}
+
+#paragrafo2{
+    font-size: 2em;
+    background-color: rgba(0, 50, 200, 0.2);
+}
+
+.square{
+    background-color: cyan;
+    width: 100px;
+    height: 100px;
+    margin: 30px;
+    border: 15px solid  white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+    font-size: 110%;
+}
+
+#input{
+    margin-left: 110px;
+}
+
+a{
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    color: white;
+    background-color: #2bc7bf;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+
+a:hover{
+    color: #2bc7bf;
+    background-color: white;
+} 
+/*
+active só acontece quando eu clico
+*/
+/*  a:active{   
+    color: #2bc7bf;
+    background-color: white;
+} */
+

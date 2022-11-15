@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        /*setTimeout é timer é o intervalo entre o disparo da função(ou outro codigo) 
+        até que ela inicie
+
+        setInterval é 
+        */
+        var numero = 0
+        var interval 
+
+        function attTexto(){
+            let h = document.getElementsByTagName("h1")[0]
+            h.innerHTML += " " + numero
+            numero++;
+        }
+
+        function iniciar(){
+       
+            interval = setInterval(attTexto ,1000)
+        }
+       
+        function parar(){
+            clearInterval(interval)
+        }
+        //-----------------------------------------------------
+
+        function iniciar2(){
+           
+            variavelParaPodePararDepois = setTimeout(mudarTexto, 1150)
+
+        }
+
+        function mudarTexto(){
+            let h1 = document.getElementsByTagName("h1")[1]
+
+            h1.innerHTML = "2º setTimeout"
+            h1.style.color = "red"
+        }
+
+        function parar2(){
+            clearTimeout(variavelParaPodePararDepois)
+
+            let h1 = document.getElementsByTagName("h1")[1]
+            h1.style= "none"
+        }
+
+
+    </script>
+
+</head>
+<body>
+
+    <h1>1º setInterval</h1>
+    <input onclick="iniciar()" type="submit" value="Iniciar">
+    <input onclick="parar()" type="submit" value="parar">
+    
+    <h1>2º setTimeout</h1>
+    <input onclick="iniciar2()" type="submit" value="Iniciar">
+    <input onclick="parar2()" type="submit" value="parar">
+
+</body>
+</html>

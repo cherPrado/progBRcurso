@@ -1,0 +1,37 @@
+body{
+    background-image: url(https://frigorificoarvoredo.com.br/blog/wp-content/uploads/2021/09/dicas-churrasco-incr%C3%ADvel.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+}
+
+.container{
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 300px;
+    background-color: chocolate;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 10%;
+}
+
+h1{
+    margin: 0%;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+input{
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+button{
+    width: 100%;
+}
+
+#resultado{
+
+}

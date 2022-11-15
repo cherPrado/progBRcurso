@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        let compradores = ["Lucas", "Caio", "Cesar", "Julio", "Augusto", "Mac"]
+
+        function sortear(){
+
+            let n = compradores.length
+            let h1 = document.getElementsByTagName("h1")[0]
+            let rand = Math.floor(Math.random()*n)
+            h1.innerText = "Ganhador número : " + rand + ", " + compradores[rand]
+
+
+        }
+
+    </script>
+
+    <style>
+        div{
+            background-color: red;
+        }
+        h1{
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Sorteissso</h1>
+
+        <button onclick="sortear()">Clique para sortear</button>
+    </div>  
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        /*quando carrega ele executa a função, pega o valor que estava em setItem
+        e traz para o html "padrão" */
+        onload = function ( ) { 
+
+            let nome = localStorage.getItem("nome")
+            let h1 = document.getElementById("nome")
+            h1.innerHTML = nome
+        }
+
+        function atualizar(element){
+            let h1 = document.getElementById("nome")
+            let valor = element.value
+
+            h1.innerHTML = valor
+
+            localStorage.setItem("nome", valor)
+        }
+
+        //Storage só guarda string, usando JSON p/ alterar para number
+        //let a = { aluno: "Lucas", n1: 7.3}
+
+        //localStorage.setItem("aluno", JSON.stringify(a))
+
+        let a = localStorage.getItem("aluno")
+        console.log(JSON.parse(a))
+
+        let c = JSON.parse(a)
+
+        localStorage.clear() //Limpa tudo
+    </script>
+
+</head>
+<body>
+
+    <h1 id = "nome"></h1>
+    <input type="text" oninput="atualizar(this)" name="" id="">
+    
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        // function loaded(){
+        //     let t = document.getElementById("titulo")
+
+        //     //t.onclick = mudarText 
+        //     // outra forma v
+        //     t.addEventListener("click", mudarText)
+
+        // }
+
+        
+        // function mudarText(){
+        //     this.innerHTML = "Novo Testo Rapá!!"
+        // }
+        
+        function loaded(){
+            let t = document.getElementById("titulo")
+
+            t.addEventListener("mouseover", function(){
+                this.innerHTML = "Novo Testo Rapá!!"
+                this.style.backgroundColor = "red"
+                this.style.color = "white"
+            })
+            t.onmouseover = black
+
+            let para = document.getElementById("para")
+
+            para.onmouseover = black
+
+            function black(){
+                this.addEventListener("mouseout", function(){
+                this.style.backgroundColor = "black"
+                this.style.color = "white"
+            })}
+
+        }
+
+        function ret3(){
+            console.log(3)
+            return 5
+        }
+
+
+    </script>
+
+</head>
+
+<body onload="loaded()">
+    
+    <h1 id="titulo">teste</h1>
+
+    <p id = "para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis accusamus corporis impedit nostrum deserunt quaerat a incidunt, perspiciatis molestiae tempore dolorem fugiat cupiditate, mollitia numquam eius tenetur, voluptatibus ut magnam.</p>
+    
+   <img src="https://conteudo.imguol.com.br/c/bichos/80/2020/09/25/sansa-e-uma-gata-que-foi-abandonada-mas-conseguiu-ser-adotada-e-hoje-bomba-no-instagram-1601056796152_v2_450x600.jpg" width="300px" alt="">
+</body>
+
+</html>

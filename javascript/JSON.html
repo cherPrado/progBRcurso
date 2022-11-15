@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        let pessoa = {
+            nome: "Igor",
+            idade: 19
+        }
+
+        let a = JSON.stringify(pessoa) // o OBJETO virou STRING
+       // console.log(a) //imprime a string q era objeto
+
+        let b = '{"nome":"Lucas","idade":27}'
+
+        let bJason = JSON.parse(b) //Transformou a STRING em OBJETO
+        //console.log(bJason) //imprime o objeto que era string
+
+        //localStorage.setItem("meunome", "Cherlau")
+        let n = localStorage.getItem("meunome")
+       
+        console.log(n)
+
+    </script>
+</head>
+<body>
+
+
+</body>
+</html>

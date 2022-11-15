@@ -1,0 +1,19 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color: black;
+}
+.background{
+    background-color: lightgray;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 5px;
+}
+.centralizador{
+    display: flex;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+}

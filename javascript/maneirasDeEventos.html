@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        function f(e){
+            console.log("teste f")
+            console.log(e)
+        }
+        
+        function f1(){
+            console.log("teste f1")
+            console.log(this)
+            console.log(this.target) //desse modo do addEventListener é possivel pegar o elemento
+                                     //também consegue saber qual foi o evento executado
+        }
+        
+        
+        window.onload = function(){
+            let h1 = document.getElementsByTagName("h1")[0]
+
+            h1.addEventListener("click", f1) //dessa maneira o elemento é o h1
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <h1 onclick="f(this)"> Tituloo </h1> 
+
+
+</body>
+
+</html>

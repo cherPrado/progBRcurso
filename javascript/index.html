@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .paragrafo{
+            color: red
+        }
+
+        div{
+            display: inline-block;
+            text-align: center;
+            box-sizing: border-box;
+            border-radius: 15px;
+            background-color: red;
+            color: white;
+            font-size: 2rem;
+            padding:20px;
+        }
+    </style>
+
+    <script>
+        function onOver(divi){
+            divi.style.backgroundColor = "blue"
+        } 
+
+        function onOut(divi){
+            divi.style.backgroundColor = "red"
+        }
+
+        function hideH1(){
+            let h1 = document.getElementsByTagName("h1")[0]
+            h1.style.display = "none"
+        }
+
+        function changeH2(inp){
+           //let input = document.getElementById("texto")
+            let h2 = document.getElementsByTagName("h2")[0]
+            h2.innerText = inp.value
+        }
+
+    </script>
+</head>
+<body onload="console.log('Página completamente carregada')">
+
+    <h1 onclick="this.style.color = 'red'" > Clique em mim </h1>
+
+    <h2> Escreva em baixo e mude</h2>
+
+    <!--
+    <input id="texto" type="text" onchange="changeH2()"> 
+    <input type="text" onchange="changeH2(this)"> -->
+    <input type="text" oninput="changeH2(this)">
+
+    <input type="button">
+   
+    <img src="https://conteudo.imguol.com.br/c/bichos/80/2020/09/25/sansa-e-uma-gata-que-foi-abandonada-mas-conseguiu-ser-adotada-e-hoje-bomba-no-instagram-1601056796152_v2_450x600.jpg" width="200px" alt="">
+
+    <div onclick="hideH1()" onmouseover="onOver(this)" onmouseout="onOut(this)">Click</div>
+
+</body>
+</html>

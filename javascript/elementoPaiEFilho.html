@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+     <script>
+        window.onload = function () {
+
+            let d1 = document.getElementById("div1")
+            console.log(d1.children[0]) // .children da um array de elementos filhos
+            let h1 = d1.children[0]
+            console.log(h1.parentElement) // .parentElement pega o pai do elemento (no caso div)
+
+            //-------------------------------
+
+            let hum = document.getElementsByTagName('h1')
+
+            for(let h of hum){
+
+                console.log(h)
+
+                h.addEventListener("click", function(e){
+                    let t = e.target
+                    console.log(t.parentElement)
+                })
+            }
+
+            // function op(e){
+
+            //     let t = e.target
+            //     console.log(t.parentElement)
+            // }
+
+        }
+
+     </script>
+
+</head>
+<body>
+
+    <div id="div1">
+        <h1>Titulo</h1>
+        <p>Lorem ipsConsequuntur adipisci nobis ducimus excepturi qui sed. Atque.</p>
+    </div>
+
+    <div id="div2">
+        <h1>Titulo 2</h1>
+        <p>Lorem ipadsafsdgsdgsdfsd dsadsadad asdasdas adsasss awd.</p>
+    </div>
+    
+</body>
+</html>
